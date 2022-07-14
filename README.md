@@ -38,8 +38,8 @@
     DB_NAME=books_db
  
     SERVER_HOST=localhost
-    SERVER_PORT=:yourRestServerPort
-  	GRPCSERVER_PORT=:urGrpcserverPort
+    SERVER_PORT=:8080
+  	GRPCSERVER_PORT=:9081
    ```
 3. run docker-compose
    ```js
@@ -56,6 +56,7 @@
 
 
 ## EndPoints
+
 1. get book using  first_name and last_name
    ```js
    localhost:urRestPort/get-book
@@ -64,3 +65,4 @@
    ```js
    localhost:urRestPort/get-author
    ```
+   <p align="right">(<a href="#top">back to top</a>)</p>
