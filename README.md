@@ -46,13 +46,12 @@
    docker-compose up -d
    ```
 4. send grpcCurl request(use postman for example)
-   ```js
+   ```sh
   {
     "authorFirstName": "Anton",
     "authorLastName": "Golovanov"
   }
    ```
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## EndPoints
@@ -65,4 +64,4 @@
    ```js
    localhost:urRestPort/get-author
    ```
-   <p align="right">(<a href="#top">back to top</a>)</p>
+ 
