@@ -46,22 +46,16 @@
    docker-compose up -d
    ```
 4. send grpcCurl request(use postman for example)
-   ```sh
-  {
-    "authorFirstName": "Anton",
-    "authorLastName": "Golovanov"
-  }
-   ```
 
 
-## EndPoints
+### EndPoints
 
-1. get book using  first_name and last_name
-   ```js
-   localhost:urRestPort/get-book
-   ```
-2. get author using book_title
-   ```js
-   localhost:urRestPort/get-author
-   ```
+  1. get book using  first_name and last_name
+    
+    localhost:urRestPort/get-book
+    
+  2. get author using book_title
+    
+    localhost:urRestPort/get-author
+   
  
