@@ -1,0 +1,37 @@
+syntax = "proto3";
+option go_package ="/protob";
+package protob;
+
+service BooksService{
+    rpc GetBook(bookRequest) returns (bookResponse){}
+    rpc GetAuthor(authorRequest) returns (authorResponse){}
+  }
+  //GetBook
+  message bookInfo{
+    string bookTitle =1; 
+    string bookDescription=2;
+  }
+  message bookRequest{
+    string authorFirstName= 1;
+    string authorLastName=2 ; 
+  }
+  message bookResponse{
+    repeated bookInfo book=1; //array of titles
+  }
+
+  //GetAuthor
+  message authorRequest{
+    string bookTitle=1;
+  }
+
+  message authorInfo{
+    string authorFirstName=1;
+    string authorLastName =2;
+
+  }
+  message authorResponse{
+    repeated authorInfo author =1;
+  
+  }
+
+  
