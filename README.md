@@ -31,7 +31,7 @@
 2. Set your environment (app.env file)
    ```sh
    	DB_DRIVER=mysql
-    DB_HOST=127.0.0.1
+    DB_HOST=db
     DB_PORT=3306
     DB_USER=root
     DB_PASSWORD=example
